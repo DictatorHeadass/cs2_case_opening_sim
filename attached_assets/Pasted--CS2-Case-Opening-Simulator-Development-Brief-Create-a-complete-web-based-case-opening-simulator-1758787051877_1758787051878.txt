@@ -1,0 +1,91 @@
+🎮 CS2 Case Opening Simulator - Development Brief
+Create a complete web-based case opening simulator replicating Counter-Strike 2's case system with full economy mechanics.
+Core Features Required:
+Case Opening System
+
+15 diverse case types with escalating price tiers and unique item pools:
+
+Free Tier:
+
+Community Case ($0) - Basic starter skins
+Workshop Case ($0, 1hr cooldown) - Community designs
+
+Budget Tier:
+
+Starter Case ($10) - Entry-level progression
+Graffiti Case ($15) - Spray patterns and stickers
+Souvenir Package ($25) - Tournament drops with team stickers
+
+Standard Tier:
+
+Weapon Case ($50) - Classic CS2 skins
+Chroma Case ($75) - Colorful, vibrant themes
+Phoenix Case ($100) - Fire and mythology skins
+Danger Zone Case ($125) - Battle royale inspired
+
+Premium Tier:
+
+Operation Case ($150) - Mission-themed with StatTrak™
+Spectrum Case ($200) - Holographic effects
+Prisma Case ($250) - Rainbow and prismatic designs
+
+Elite Tier:
+
+Glove Case ($400) - Rare glove skins
+Dreams & Nightmares ($500) - Community extreme designs
+Collector's Case ($750) - Ultra-rare items, guaranteed knife/glove
+Realistic rarity system: Consumer (79.92%) → Knife (0.026%) with proper color coding
+3D animated case opening with shake/spin effects and item reveal animations
+300+ authentic CS2 items including weapons, gloves, stickers, with accurate names and values
+
+Economy & Inventory
+
+Starting balance: $1000, spend money to buy cases, earn by selling items
+Dynamic item pricing with 70-130% variance from base values
+Complete inventory system with sorting (value, rarity, date), search, and bulk operations
+Individual sell buttons + "Sell All" functionality
+
+Advanced Features
+
+Trade-up contracts: Combine 10 lower items → 1 higher tier item
+StatTrak™ system: 15% chance for items to track "kills" (adds 2x value multiplier)
+Wear conditions: Factory New, Minimal Wear, Field-Tested, Well-Worn, Battle-Scarred affecting price
+Market system: Buy/sell items with fluctuating prices based on supply/demand
+Case cooldowns: Some free cases have cooldown timers
+Special items: Gloves, knives, stickers each with unique drop mechanics
+
+Gamification
+
+Player leveling system (gain XP from opening cases, selling items)
+Achievement system with rewards (first knife, profit milestones, case opening streaks)
+Daily challenges and login bonuses
+Statistics dashboard showing total spent, earned, cases opened, best drops
+Case collection progress - track which cases you've opened and completion rates
+
+UI/UX Requirements
+
+Modern dark theme with CS2-inspired design using Tailwind CSS
+Grid layout for 15 cases with responsive design (3x5 on desktop, 2x8 on tablet, 1x15 on mobile)
+Smooth animations for all interactions (case opening, item reveals, transitions)
+Real-time balance updates and notification system for rare drops
+Case filtering/sorting - by price, recently opened, favorites
+
+Technical Stack:
+
+React 18 with hooks for state management
+Tailwind CSS for styling with custom animations
+LocalStorage for save game persistence
+Recharts for statistics and price history graphs
+Lucide React for icons
+
+Key Implementation Notes:
+
+Use realistic CS2 drop rates and item values across all 15 cases
+Each case should have 15-25 unique items with different rarity distributions
+Implement proper RNG for case opening with weighted probabilities
+Create engaging visual feedback for rare drops (screen effects, sound cues via CSS)
+Build scalable data structure to easily add new cases and items
+Include market price fluctuations that simulate real trading dynamics
+Higher-tier cases should have better drop rates for rare items to justify cost
+
+Goal: Create an addictive, polished simulator with extensive variety that captures the excitement of CS2 case opening while building a complete virtual economy players can engage with for hours across 15 different case types.
